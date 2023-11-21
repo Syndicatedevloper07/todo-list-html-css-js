@@ -1,0 +1,120 @@
+*,
+*:before,
+*:after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    background: #f6f7eb;
+    display: grid;  
+    justify-content: center;  
+    align-items: center; 
+}
+
+.container{
+    width: 40%;
+    min-width: 450px;
+    min-height: 100px;
+    background: #e94f37;
+    border-radius: 10px;
+}
+
+#newtask{
+    position: relative;
+    padding: 30px 20px;
+}
+#newtask input{
+    width: 75%;
+    height: 45px;
+    font-family: 'Poppins',sans-serif;
+    font-size: 15px;
+    border: 2px solid #d1d3d4;
+    padding: 12px;
+    color: #111111;
+    font-weight: 500;
+    position: relative;
+    border-radius: 5px;
+}
+
+#newtask input:focus{
+    outline: none;
+/*     background-color: red; */
+    border-color: #393e41;
+}
+
+#newtask button{
+    position: relative;
+    float: right;
+    width: 20%;
+    height: 45px;
+    border-radius: 5px;
+    font-family: 'Poppins',sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    background-color: #393e41;
+    border: none;
+    color: #ffffff;
+    cursor: pointer;
+    outline: none;
+}
+
+#tasks-list{
+    background-color: #e4e3e3;
+    padding: 30px 20px;
+    margin-top: 10px;
+    border-radius: 10px;
+    width: 100%;
+    position: relative;
+}
+
+.task{
+   background-color: #e94f37;
+    height: 50px;
+    margin-bottom: 8px;
+    padding: 5px 10px;
+    display: flex;
+    border-radius: 5px;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid #939697;
+    cursor: pointer;
+}
+.task span{
+    font-family: 'Poppins',sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+}
+.delete{
+    background-color: #393e41;
+    color: #ffffff;
+    height: 100%;
+    width: 40px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    outline: none;
+}
+
+
+.task .custom-checkbox {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  background-color: white;
+  border: 1px solid #393e41;
+  margin-right: 0.1em;
+  border-radius: 50%;
+}
+
+.task-completed .custom-checkbox {
+  background-color: #393e41;
+
+}
+
+.task-completed .taskname {
+  text-decoration: line-through;
+  color: green;
+}
